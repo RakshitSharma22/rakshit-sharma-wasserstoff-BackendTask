@@ -1,17 +1,14 @@
 {
   "name": "dynamic-load-balancer",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "main": "loadBalancerWithQueues.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node loadBalancerWithQueues.js",
+    "start-mock": "node mockApis.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "axios": "^1.7.2",
-    "express": "^4.19.2",
+    "axios": "^0.21.1",
+    "express": "^4.17.1",
     "morgan": "^1.10.0"
   }
 }

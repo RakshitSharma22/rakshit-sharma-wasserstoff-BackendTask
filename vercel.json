@@ -1,0 +1,20 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "loadBalancerWithQueues.js",
+        "use": "@vercel/node"
+      },
+      {
+        "src": "mockApis.js",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/loadBalancerWithQueues.js"
+      }
+    ]
+  }
+  
